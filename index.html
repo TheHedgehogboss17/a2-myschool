@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tanis Blinn's School Day</title>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/myschool.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" type="text/css" href="css/myschoolday.css">
+		</head>
+	<body>
+		<div id="banner">
+			<img id="bannerpic" src="images/P1020773.JPG" alt="row34.jpg" >
+			<h1>Welcome to my School Days!</h1>
+			<h2>Created by Tanis Blinn</h2>
+			<input id="aboutme" type="button" value="About me!"/>
+			<p id="infoaboutme">
+			I'm a Junior from Meridian High School and I'm 17.		
+<iframe id="video" width="420" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k"> </iframe>
+			<hr class="clearfloat">
+			</p>
+		</div>
+		<ul class="w3-navbar w3-card-2 w3-yellow">
+  <li><a href="http://192.168.1.100/a2school">Mr. M</a></li>
+  <li class="w3-dropdown-hover w3-hover-cyan">
+				<a class="w3-hover-teal" href="#">My Favs <i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://www.google.com">Google</a>
+					<a href="#">West Ada</a>
+					<a href="#">another one</a>
+					<a href="#">and one more</a>
+				</div>
+			</li>
+  <li class="w3-dropdown-hover">
+    <a href="#">CHS</a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Eli Tanner</a>
+      <a href="#">Ashley Xu</a>
+      <a href="http://192.168.1.115/MyIntroWebPage">Andrew Holbrook</a>
+      <a href="#">Savanah Crow</a>
+      <a href="#">Robert Gillspie</a>
+    </div>
+  </li>
+  <li class="w3-dropdown-hover">
+    <a href="#">EHS</a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#192.168.1.123/a2school">Ethan Parks</a>
+      <a href="#">Richard McClure</a>
+    </div>
+  </li>
+  <li class="w3-dropdown-hover">
+    <a href="#">MA</a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Bryan Higgins</a>
+     </div>
+  </li>
+<li class="w3-dropdown-hover">
+    <a href="#">MHS</a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Tyler Plaisted</a>
+      <a href="http://192.168.1.114/a2Barajas">Neomi Brajas</a>
+      <a href="#">Tanis Steven Blinn</a>
+      <a href="#">Nicole Cline</a>
+      <a href="#">Vic Saenz</a>
+    </div>
+  </li>
+<li class="w3-dropdown-hover">
+    <a href="#">MVHS</a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Daniel Carlson</a>
+      <a href="#">Briana Stefan</a>
+      <a href="#">Micah Gomez</a>
+    </div>
+  </li>
+<li class="w3-dropdown-hover">
+    <a href="#">RMHS</a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Cole Patterson</a>
+      <a href="#">Andrew Wheeler</a>
+      <a href="#">Alex Bleak</a>
+      <a href="#">Chase Seeberger</a>
+      <a href="#">David Brigeman</a>
+    </div>
+  </li>
+</ul>
+
+<div class="w3-content" style="max-width:500px; max-height:450px; position:relative">
+
+<div class="w3-display-container mySlides">
+  <img src="images/hazenthehedgehog.png" style="width:50% height:50%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Hazen the Hedgehog
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/SanctumtheHedgehog.png" style="width:50%; height:50%" >
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Sanctum the Hedgehog
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/DanitheFox.jpg" style="width:50%; height:50%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Dani the Fox
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/SteeltheHedgehog.png" style="width:50% height:50%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+  	Steel the Hegehog
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images/FionaFox.jpg" style="width:0% height:0%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Fiona the Fox
+  </div>
+</div>
+</div>
+<div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1;}   
+  if (n < 1) {slideIndex = x.length;}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+};
+</script>
+</div>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+<div>
+	<script src="js/slideshow.js"></script>
+		
+</div>
+</body>
+</html>
